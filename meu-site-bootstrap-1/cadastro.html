@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <!-- Página responsiva para dispositivos diferentes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Character encoding pra latin-->
+        <meta charset="UTF-8">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+         
+        <!-- Título (page identifier)-->
+        <title>Baú Esquizo: Cadastro de Pacientes</title>
+    </head>
+    <body>
+        <!-- Corpo da página -->
+        <!-- header -->
+         <header>
+            
+         </header>
+         <!-- nav -->
+        <!-- Nav bar da Doll -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Baú Esquizo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Início de um sonho</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro de Pacientes</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+         <main class="container mt-4">
+            <h1>Cadastro de Pacientes</h1> 
+            <form action="sucesso.html" method="GET">
+                <div class="mb-3">
+                    <label for="primeiroNome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="primeiroNome" name="primeiroNome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sobrenome" class="form-label">Sobrenome:</label>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="emailUsuario" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dataNascimento" class="form-label">Data de nascimento:</label>
+                    <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+                </div>
+
+                <fieldset class="mb-3">
+                    <legend class="col-form-label">Gênero</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoMasculino" name="genero" value="masculino">
+                        <label class="form-check-label" for="generoMasculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoFeminino" name="genero" value="feminino">
+                        <label class="form-check-label" for="generoFeminino">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoNaoBinario" name="genero" value="naobinario">
+                        <label class="form-check-label" for="generoNaoBinario">Não-binário</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoNaoInformado" name="genero" value="naoinformado">
+                        <label class="form-check-label" for="generoNaoInformado">Prefiro não informar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="generoOutro" name="genero" value="outro">
+                        <label class="form-check-label" for="generoOutro">Outro</label>
+                    </div>
+                </fieldset>
+
+                <div class="mb-3">
+                    <label class="form-label">Interesses</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interesseSonic" name="interesseSonic" value="sonic">
+                        <label class="form-check-label" for="interesseSonic">
+                            <img src="img/sonic.gif" alt="Sonic correndo dos coachs" width="100" height="100">
+                            <b>Sonic (Fugindo da meritocracia) </b>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interesseZelda" name="interesseZelda" value="zelda">
+                        <label class="form-check-label" for="interesseZelda">
+                            <img src="img/link.gif" alt="Link depois do chá de korok seeds" width="100" height="100">
+                            <b>Korok Seeds do amor</b>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interesseDoritos" name="interesseDoritos" value="doritos">
+                        <label class="form-check-label" for="interesseDoritos">
+                            <img src="img/mario_doritos.gif" alt="Trump pensando se taxa o Brasil mais 64 vezes" width="100" height="100">
+                            <b>Super Trump 64% Tariffs of The Year Edition</b>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+            </form>
+         </main>
+        <!-- section -->
+         <section>
+
+         </section>
+         <!-- footer -->
+         <footer>
+
+         </footer>
+        <!-- Bootstrap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
