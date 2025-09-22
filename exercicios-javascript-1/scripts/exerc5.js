@@ -1,0 +1,1 @@
+let numeroEscolhido = prompt("Escolha um número de 1 a 10  (ง ͠° ͟ل͜ ͡°)ง");
